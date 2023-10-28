@@ -91,7 +91,7 @@
 .footer-link4 {
   list-style: none;
 }
-.f-link1 {
+.f-link1, .footer-div {
   padding-top: 30px;
 }
 .f-links {
@@ -103,10 +103,6 @@
   text-decoration: none;
   color: white;
   font-size: 12px;
-}
-
-.footer-div {
-  padding-top: 30px;
 }
 .f-nu {
   font-size: 25px;
