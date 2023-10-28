@@ -1,0 +1,21 @@
+.nu-logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.nu-logo-image {
+  width: 8%;
+}
+.navbar-box-b {
+  background-color: #35408e;
+  color: white;
+}
+.navbar-box-y {
+  background-color: #fcd41c;
+  color: white;
+  height: 4px;
+}
+.nav-icons {
+  padding-left: 15px;
+  font-size: 10px;
+  color: white;
+}
