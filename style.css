@@ -139,3 +139,16 @@
   padding-top: 250px;
   padding-bottom: 250px;
 }
+.lib-nav {
+  background-color: #fcd41c;
+}
+.b-line {
+  background-color: #35408e;
+  height: 4px;
+}
+.lib-nav-img {
+  border-radius: 50px;
+}
+.lib-viewp-btn {
+  border-radius: 30px;
+}
