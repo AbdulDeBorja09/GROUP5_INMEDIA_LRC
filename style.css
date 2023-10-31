@@ -91,7 +91,8 @@
 .footer-link4 {
   list-style: none;
 }
-.f-link1, .footer-div {
+.f-link1,
+.footer-div {
   padding-top: 30px;
 }
 .f-links {
@@ -106,4 +107,31 @@
 }
 .f-nu {
   font-size: 25px;
+}
+.profile-container {
+  padding-top: 100px;
+}
+.profile-table1 {
+  width: 100%;
+}
+.info-container,
+.address-container {
+  background-color: rgb(246, 248, 248);
+}
+.info-container h3,
+.address-container h3 {
+  padding-top: 30px;
+}
+.profile-table1 td {
+  padding: 5px;
+}
+.logout {
+  padding: 30px;
+}
+.logout a {
+  width: 50%;
+}
+.back-button {
+  width: 30%;
+  padding-top: 50px;
 }
