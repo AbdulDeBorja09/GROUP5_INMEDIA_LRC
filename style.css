@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 .nu-logo {
   padding-top: 10px;
@@ -120,7 +117,6 @@
 .info-container,
 .address-container {
   background-color: rgb(246, 248, 248);
-  border: 0.5px solid rgb(209, 209, 209);
 }
 .info-container h3,
 .address-container h3 {
@@ -144,7 +140,7 @@
   padding-bottom: 250px;
 }
 .lib-nav {
-  background-color: #e0c02f;
+  background-color: #fcd41c;
 }
 .b-line {
   background-color: #35408e;
@@ -156,16 +152,15 @@
 .lib-viewp-btn {
   border-radius: 30px;
 }
-
-.login-body {
+.login-body{
   background-color: #fcd41c;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
 }
-.login-container {
+.login-container{
   background-color: #fff;
   border-radius: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -176,25 +171,25 @@
   min-height: 480px;
 }
 
-.login-container p {
+.login-container p{
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.3px;
   margin: 20px 0;
 }
 
-.login-container span {
+.login-container span{
   font-size: 12px;
 }
 
-.login-container a {
+.login-container a{
   color: #333;
   font-size: 13px;
   text-decoration: none;
   margin: 15px 0 10px;
 }
 
-.login-container button {
+.login-container button{
   background-color: #35408e;
   color: #fff;
   font-size: 12px;
@@ -208,12 +203,12 @@
   cursor: pointer;
 }
 
-.login-container button.hidden {
+.login-container button.hidden{
   background-color: transparent;
   border-color: #fff;
 }
 
-.login-container form {
+.login-container form{
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -223,7 +218,7 @@
   height: 100%;
 }
 
-.login-container input {
+.login-container input{
   background-color: #eee;
   border: none;
   margin: 8px 0;
@@ -233,50 +228,49 @@
   width: 100%;
   outline: none;
 }
-.form-container {
+.form-container{
   position: absolute;
   top: 0;
   height: 100%;
   transition: all 0.6s ease-in-out;
 }
 
-.sign-in {
+.sign-in{
   left: 0;
   width: 50%;
   z-index: 2;
 }
-.login-container.active .sign-in {
+.login-container.active .sign-in{
   transform: translateX(100%);
+
 }
-.sign-up {
+.sign-up{
   left: 0;
   width: 50%;
   opacity: 0;
   z-index: 1;
 }
-.login-container.active .sign-up {
+.login-container.active .sign-up{
   transform: translateX(100%);
   opacity: 1;
   z-index: 5;
   animation: move 0.6s;
 }
-@keyframes move {
-  0%,
-  49.99% {
-    opacity: 0;
-    z-index: 1;
+@keyframes move{
+  0%, 49.99%{
+      opacity: 0;
+      z-index: 1;
   }
-  50%,
-  100% {
-    opacity: 1;
-    z-index: 5;
+  50%, 100%{
+      opacity: 1;
+      z-index: 5;
   }
 }
 
-.social-icons {
+.social-icons{
   margin: 20px 0;
 }
-.social-icons a {
+.social-icons a{
   border: 1px solid #ccc;
   border-radius: 20%;
   display: inline-flex;
@@ -287,7 +281,7 @@
   height: 40px;
 }
 
-.toggle-container {
+.toggle-container{
   position: absolute;
   top: 0;
   left: 50%;
@@ -299,17 +293,17 @@
   z-index: 1000;
 }
 
-.login-container.active .toggle-container {
+.login-container.active .toggle-container{
   transform: translateX(-100%);
   border-radius: 0 150px 100px 0;
 }
-.link a:hover {
+.link a:hover{
   text-decoration: underline;
 }
-.toggle {
+.toggle{
   background-color: #35408e;
   height: 100%;
-
+  
   color: #fff;
   position: relative;
   left: -100%;
@@ -319,11 +313,11 @@
   transition: all 0.6s ease-in-out;
 }
 
-.login-container.active .toggle {
+.login-container.active .toggle{
   transform: translateX(50%);
 }
 
-.toggle-panel {
+.toggle-panel{
   position: absolute;
   width: 50%;
   height: 100%;
@@ -338,66 +332,22 @@
   transition: all 0.6s ease-in-out;
 }
 
-.toggle-left {
+.toggle-left{
   transform: translateX(-200%);
 }
 
-.login-container.active .toggle-left {
+.login-container.active .toggle-left{
   transform: translateX(0);
 }
 
-.toggle-right {
+.toggle-right{
   right: 0;
   transform: translateX(0);
 }
 
-.login-container.active .toggle-right {
+.login-container.active .toggle-right{
   transform: translateX(200%);
 }
-@media screen and (max-width: 600px) {
-  .table-hide {
-    display: none;
-  }
-  .student-table th,
-  td,
-  .btn {
-    font-size: 12px;
-    align-items: center;
-  }
-}
-.lib-footer {
-  background-color: #242424;
-  padding-top: 70px;
-}
-.lib-footer-btm {
-  background-color: rgb(20, 20, 20);
-}
-.lib-footer-txt {
-  color: white;
-  font-size: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.footer-img {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.lib-footer-links {
-  color: rgb(177, 173, 173);
-  font-size: 12px;
-}
-.lib-footer-div {
-  justify-content: center;
-  padding-bottom: 50px;
-}
-.student-data-title {
-  font-weight: 400;
-  padding-top: 50px;
-  padding-bottom: 20px;
-}
-.student-table {
-  border: 0.5px solid rgb(228, 228, 228);
-}
-.student-search {
-  font-weight: 400;
+@media screen and (max-width: 768px) {
+  
 }

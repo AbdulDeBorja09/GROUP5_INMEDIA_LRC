@@ -44,35 +44,14 @@ function validateForm() {
   }
 }
 
-const container = document.getElementById("singin-container");
-const registerBtn = document.getElementById("register");
-const loginBtn = document.getElementById("login");
+const container = document.getElementById('singin-container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
 
-registerBtn.addEventListener("click", () => {
-  container.classList.add("active");
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
 });
 
-loginBtn.addEventListener("click", () => {
-  container.classList.remove("active");
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
 });
-
-const search = () => {
-  const searchbox = document.getElementById("Search-item").value.toUpperCase();
-  const studentlist = document.getElementById("student-list");
-  const student = document.querySelectorAll(".student");
-  const sname = document.getElementsByTagName("th");
-
-  for (var i = 0; 1 < sname.length; i++) {
-    let match = student[i].getElementsByTagName("th")[0];
-
-    if (match) {
-      let textvalue = match.textContent || match.innerHTML;
-
-      if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
-        student[i].style.display = "";
-      } else {
-        student[i].style.display = "none";
-      }
-    }
-  }
-};
