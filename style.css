@@ -352,3 +352,19 @@
 }
 @media screen and (max-width: 768px) {
 }
+.lib-footer {
+  background-color: #333;
+}
+.lib-footer-btm {
+  background-color: rgb(34, 34, 34);
+}
+.lib-footer-txt {
+  color: white;
+  font-size: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer-img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
