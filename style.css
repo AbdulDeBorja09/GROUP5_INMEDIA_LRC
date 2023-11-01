@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .nu-logo {
   padding-top: 10px;
@@ -117,6 +120,7 @@
 .info-container,
 .address-container {
   background-color: rgb(246, 248, 248);
+  border: 0.5px solid rgb(209, 209, 209);
 }
 .info-container h3,
 .address-container h3 {
@@ -140,7 +144,7 @@
   padding-bottom: 250px;
 }
 .lib-nav {
-  background-color: #fcd41c;
+  background-color: #e0c02f;
 }
 .b-line {
   background-color: #35408e;
@@ -350,13 +354,23 @@
 .login-container.active .toggle-right {
   transform: translateX(200%);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+  .table-hide {
+    display: none;
+  }
+  .student-table th,
+  td,
+  .btn {
+    font-size: 12px;
+    align-items: center;
+  }
 }
 .lib-footer {
-  background-color: #333;
+  background-color: #242424;
+  padding-top: 70px;
 }
 .lib-footer-btm {
-  background-color: rgb(34, 34, 34);
+  background-color: rgb(20, 20, 20);
 }
 .lib-footer-txt {
   color: white;
@@ -367,4 +381,23 @@
 .footer-img {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+.lib-footer-links {
+  color: rgb(177, 173, 173);
+  font-size: 12px;
+}
+.lib-footer-div {
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.student-data-title {
+  font-weight: 400;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.student-table {
+  border: 0.5px solid rgb(228, 228, 228);
+}
+.student-search {
+  font-weight: 400;
 }

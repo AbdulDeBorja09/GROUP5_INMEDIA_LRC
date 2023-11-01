@@ -26,7 +26,7 @@ function validateForm() {
     return false;
   } else if (
     email === "juandc@librarian.nu-laguna.edu.ph" &&
-    password === "  "
+    password === "AkosiJuan123"
   ) {
     alert("Login successful!");
     window.location.href = "Librarian_home.html";
@@ -55,3 +55,24 @@ registerBtn.addEventListener("click", () => {
 loginBtn.addEventListener("click", () => {
   container.classList.remove("active");
 });
+
+const search = () => {
+  const searchbox = document.getElementById("Search-item").value.toUpperCase();
+  const studentlist = document.getElementById("student-list");
+  const student = document.querySelectorAll(".student");
+  const sname = document.getElementsByTagName("th");
+
+  for (var i = 0; 1 < sname.length; i++) {
+    let match = student[i].getElementsByTagName("th")[0];
+
+    if (match) {
+      let textvalue = match.textContent || match.innerHTML;
+
+      if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+        student[i].style.display = "";
+      } else {
+        student[i].style.display = "none";
+      }
+    }
+  }
+};
