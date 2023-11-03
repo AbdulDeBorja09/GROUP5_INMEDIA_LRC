@@ -558,6 +558,32 @@ form .btn button[type="submit"] {
   right: 10px;
   color: #888;
 }
+
+.viewpage-info h5 {
+  padding-top: 10px;
+  font-weight: 500;
+}
+.viewpage-info {
+  padding: 40px;
+}
+.viewpage-info a {
+  margin-top: 20px;
+}
+.viewpage-info .description {
+  padding-top: 30px;
+}
+.explroe-txt {
+  padding-top: 50px;
+}
+.go-back {
+  padding-top: 50px;
+}
+.unv-btn {
+  margin-top: 20px;
+}
+.viewpage-img{
+  filter: grayscale(100%);
+}
 @media screen and (max-width: 600px) {
   .carousel-img {
     filter: blur(1px);
