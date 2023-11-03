@@ -21,11 +21,11 @@
           <input type="radio" name="slide" id="login" checked />
           <input type="radio" name="slide" id="signup" />
           <label for="login" class="slide login">Login</label>
-          <label for="signup" class="slide signup">Signup</label>
+          <label for="signup" class="slide signup">Sign-up</label>
           <div class="slider-tab"></div>
         </div>
         <div class="form-inner">
-          <form onsubmit="return validateForm()">
+          <form onsubmit="return validateForm()" class="login">
             <div class="field">
               <input
                 name="email"
@@ -50,7 +50,7 @@
               <button type="submit">Login</button>
             </div>
             <div class="signup-link">
-              Create an account <a href="">Signup now</a>
+              Create an account <a href="">Sign-up now</a>
             </div>
           </form>
           <form action="#" class="signup">
