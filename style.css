@@ -72,6 +72,13 @@
   padding-top: 80px;
   padding-bottom: 100px;
 }
+.learn-more,
+.prdct-btn,
+.submit-btn-cntct {
+  background-color: #35408e;
+  color: white;
+}
+
 .about-txt,
 .about-img {
   padding: 20px;
@@ -343,28 +350,19 @@ form .btn button[type="submit"] {
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
 }
-@media screen and (max-width: 600px) {
-  .table-hide {
-    display: none;
-  }
-  .student-table th,
-  td,
-  .btn {
-    font-size: 12px;
-    align-items: center;
-  }
-}
+
 .lib-footer {
   background-color: #242424;
   padding-top: 70px;
 }
 .lib-footer-btm {
   background-color: rgb(20, 20, 20);
+  padding-bottom: 1px;
 }
 .lib-footer-txt {
   color: white;
   font-size: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 }
 .footer-img {
@@ -393,4 +391,138 @@ form .btn button[type="submit"] {
 
 .table-hide {
   text-align: center;
+}
+.stdnt-pimage {
+  padding-bottom: 50px;
+}
+.stdnt-pimage img {
+  border-radius: 100%;
+  width: 25%;
+}
+.stdnt-info p {
+  font-weight: 400;
+}
+.stdnt-info-addrs h3 {
+  padding-bottom: 20px;
+}
+.stdnt-info-addrs,
+.stdnt-recent {
+  border: 1px solid rgb(207, 207, 207);
+  background-color: #f7f7f7;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.rcnt-brrwd td {
+  padding-bottom: 20px;
+}
+.sdtn-rcnt-div {
+  border-right: 1px solid rgb(228, 228, 228);
+}
+.return-btn {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.msg-search {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.msg-user-img {
+  border-radius: 100px;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 20px;
+
+  background-color: rgb(247, 246, 246);
+}
+.about-img p {
+  text-align: center;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+.about-img h6 {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+.abt-desc {
+  background-color: rgb(247, 246, 246);
+}
+.img-img {
+  background-color: rgb(247, 246, 246);
+}
+.abtus-title {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.mission h3 {
+  text-align: end;
+}
+.mission {
+  padding: 40px;
+  background-color: #f1f1f1;
+}
+.vission {
+  padding: 40px;
+}
+
+.our-team {
+  padding: 40px;
+  background-color: #f1f1f1;
+}
+@media screen and (max-width: 600px) {
+  .carousel-img {
+    filter: blur(1px);
+  }
+  .carousel-caption h5 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: black;
+  }
+  .carousel-caption p {
+    width: 60%;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .carousel-caption .rbutton {
+    width: 50%;
+    font-size: 10px;
+  }
+  .table-hide {
+    display: none;
+  }
+  .student-table th,
+  td,
+  .btn {
+    font-size: 13px;
+    align-items: center;
+  }
+  .sdtn-rcnt-div {
+    border-right: 1px solid rgb(228, 228, 228);
+  }
+  .sdtn-rcnt-div {
+    border-right: 0px;
+  }
+  .m-hide {
+    display: none;
+  }
+  .about-img {
+    width: 50%;
+  }
+  .about-img p {
+    font-size: 10px;
+  }
+  .about-img h6 {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .m-hide {
+    display: none;
+  }
 }
