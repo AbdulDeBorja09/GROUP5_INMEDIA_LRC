@@ -473,6 +473,20 @@ form .btn button[type="submit"] {
   padding: 40px;
   background-color: #f1f1f1;
 }
+.books-page {
+  position: relative;
+  text-align: center;
+}
+.bcenter {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+.bcenter input {
+  width: 100%;
+  border-radius: 20px;
+}
 @media screen and (max-width: 600px) {
   .carousel-img {
     filter: blur(1px);
