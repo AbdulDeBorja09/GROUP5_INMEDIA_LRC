@@ -62,37 +62,31 @@ signupLink.onclick = () => {
   return false;
 };
 
-const search = () => {
-  const searchbox = document.getElementById("Search-item").value.toUpperCase();
-  const studentlist = document.getElementById("student-list");
-  const student = document.querySelectorAll(".student");
-  const sname = document.getElementsByTagName("th");
+function search() {
+  const searchInput = document.getElementById("search-item");
+  const searchTerm = searchInput.value.toLowerCase();
+  const books = document.querySelectorAll(".book");
 
-  for (var i = 0; 1 < sname.length; i++) {
-    let match = student[i].getElementsByTagName("th")[0];
-
-    if (match) {
-      let textvalue = match.textContent || match.innerHTML;
-
-      if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
-        student[i].style.display = "";
-      } else {
-        student[i].style.display = "none";
-      }
+  books.forEach((book) => {
+    const bookTitle = book.querySelector("h3").textContent.toLowerCase();
+    if (bookTitle.includes(searchTerm)) {
+      book.style.display = "block";
+    } else {
+      book.style.display = "none";
     }
-  }
-};
-
-const searchInput = document.getElementById("search");
-const rows = document.querySelectorAll("tbody tr");
-console.log(rows);
-searchInput.addEventListener("keyup", function (event) {
-  const query = event.target.value.toLowerCase();
-  rows.forEach((row) => {
-    row.querySelector("td").textContent.toLowerCase().startsWith(query)
-      ? (row.style.display = "table-row")
-      : (row.style.display = "none");
   });
-});
+}
 
-new DataTable("#example");
+function sortBooks() {
+  const selectedCategory = document.getElementById("sort").value;
+  const books = document.querySelectorAll(".book");
+
+  books.forEach((book) => {
+    const category = book.getAttribute("data-category");
+    if (selectedCategory === "all" || selectedCategory === category) {
+      book.style.display = "block";
+    } else {
+      book.style.display = "none";
+    }
+  });
+}
