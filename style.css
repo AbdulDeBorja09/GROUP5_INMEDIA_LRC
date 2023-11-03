@@ -581,8 +581,12 @@ form .btn button[type="submit"] {
 .unv-btn {
   margin-top: 20px;
 }
-.viewpage-img{
+.viewpage-img {
   filter: grayscale(100%);
+}
+.view-back-btn {
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 @media screen and (max-width: 600px) {
   .carousel-img {
