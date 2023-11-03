@@ -44,17 +44,23 @@ function validateForm() {
   }
 }
 
-const container = document.getElementById("singin-container");
-const registerBtn = document.getElementById("register");
-const loginBtn = document.getElementById("login");
-
-registerBtn.addEventListener("click", () => {
-  container.classList.add("active");
-});
-
-loginBtn.addEventListener("click", () => {
-  container.classList.remove("active");
-});
+const loginText = document.querySelector(".title-text .login");
+const loginForm = document.querySelector("form.login");
+const loginBtn = document.querySelector("label.login");
+const signupBtn = document.querySelector("label.signup");
+const signupLink = document.querySelector("form .signup-link a");
+signupBtn.onclick = () => {
+  loginForm.style.marginLeft = "-50%";
+  loginText.style.marginLeft = "-50%";
+};
+loginBtn.onclick = () => {
+  loginForm.style.marginLeft = "0%";
+  loginText.style.marginLeft = "0%";
+};
+signupLink.onclick = () => {
+  signupBtn.click();
+  return false;
+};
 
 const search = () => {
   const searchbox = document.getElementById("Search-item").value.toUpperCase();
@@ -76,3 +82,17 @@ const search = () => {
     }
   }
 };
+
+const searchInput = document.getElementById("search");
+const rows = document.querySelectorAll("tbody tr");
+console.log(rows);
+searchInput.addEventListener("keyup", function (event) {
+  const query = event.target.value.toLowerCase();
+  rows.forEach((row) => {
+    row.querySelector("td").textContent.toLowerCase().startsWith(query)
+      ? (row.style.display = "table-row")
+      : (row.style.display = "none");
+  });
+});
+
+new DataTable("#example");
