@@ -88,9 +88,21 @@
 }
 .new-arrival {
   padding-top: 50px;
+  padding-bottom: 30px;
+}
+.new-arvl {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.card {
+  height: 100%;
 }
 .card-text {
   padding: 10px;
+}
+.card-category-title {
+  font-weight: 500;
+  font-size: 15px;
 }
 .footer {
   margin-top: 50px;
@@ -545,7 +557,9 @@ form .btn button[type="submit"] {
 }
 .book a {
   margin-top: 10px;
+  margin-left: 10px;
 }
+
 .book-status h6 {
   font-weight: 400;
   font-size: 15px;
