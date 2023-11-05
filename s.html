@@ -125,94 +125,16 @@
       </div>
       <div class="navbar-box-y container-{breakpoint}"></div>
     </div>
-    <div class="container">
-      <h1 class="text-center review-title">Rate Us</h1>
-      <div class="rating-form bg-light shadow-sm">
-        <form action="">
-          <div class="row">
-            <div class="review-input col-lg-6 col-md-12 col-sm-12">
-              <div class="review-space"></div>
-              <label for="name">Student Name:</label>
-              <input type="text" name="name" id="name" class="form-control" />
-            </div>
-            <div class="review-input col-lg-6 col-md-12 col-sm-12">
-              <label for="name">Student Number:</label>
-              <input type="text" name="name" id="name" class="form-control" />
-            </div>
-            <div class="review-input col-lg-6 col-md-12 col-sm-12">
-              <label for="name">Department:</label>
-              <input type="text" name="name" id="name" class="form-control" />
-            </div>
-            <div class="review-input col-lg-6 col-md-12 col-sm-12">
-              <label for="name">Section:</label>
-              <input type="text" name="name" id="name" class="form-control" />
-            </div>
-            <div class="review-input col-lg-12 col-md-12 col-sm-12">
-              <label for="suggestion">suggestion</label>
-              <textarea
-                name="suggestion"
-                id="suggestion"
-                cols="30"
-                rows="10"
-                class="form-control"
-              ></textarea>
-            </div>
-          </div>
-
-          <div class="star-rating text-center">
-            <p id="rating-value" class="yr-review-txt text-center">
-              Your Review:
-            </p>
-            <span class="rating-star fa fa-star checked" data-value="1"></span>
-            <span class="rating-star fa fa-star checked" data-value="2"></span>
-            <span class="rating-star fa fa-star checked" data-value="3"></span>
-            <span class="rating-star fa fa-star checked" data-value="4"></span>
-            <span class="rating-star fa fa-star checked" data-value="5"></span>
-          </div>
-        </form>
-        <div class="text-center" style="padding-bottom: 20px">
-          <button class="btn btn-outline-primary w-50">Send Review</button>
-        </div>
+    <div class="review-title text-center">
+      <h1>Rate Us</h1>
+      <div class="star-rating">
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
       </div>
-      <script>
-        function initializeStarRating() {
-          const stars = document.querySelectorAll(".rating-star");
-          const ratingValue = document.getElementById("rating-value");
-          let rating;
-
-          stars.forEach((star) => {
-            star.addEventListener("click", () => {
-              rating = star.getAttribute("data-value");
-              ratingValue.textContent = `${rating}`;
-              highlightSelectedStars(rating);
-            });
-
-            star.addEventListener("mouseover", () => {
-              resetStarsColor();
-              highlightSelectedStars(star.getAttribute("data-value"));
-            });
-
-            star.addEventListener("mouseout", () => {
-              resetStarsColor();
-              highlightSelectedStars(rating);
-            });
-          });
-
-          function resetStarsColor() {
-            stars.forEach((star) => {
-              star.style.color = "gray";
-            });
-          }
-
-          function highlightSelectedStars(value) {
-            for (let i = 0; i < value; i++) {
-              stars[i].style.color = "#c9ab24";
-            }
-          }
-        }
-
-        window.addEventListener("load", initializeStarRating);
-      </script>
+      <p id="rating-value"></p>
     </div>
 
     <div class="review-title text-center">
@@ -264,7 +186,7 @@
           <div class="rev-img-box text-center">
             <img src="Resources/profile.png" alt="" />
           </div>
-          <p>Rausa, Zyrha Alliah</p>
+          <p>Rausa, Zyrha Alliah </p>
           <div class="review-hr">
             <hr />
           </div>

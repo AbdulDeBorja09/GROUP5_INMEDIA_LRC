@@ -421,7 +421,6 @@ form .btn button[type="submit"] {
 .about-img img {
   width: 100%;
   border-radius: 20px;
-
   background-color: rgb(247, 246, 246);
 }
 .about-img p {
@@ -503,15 +502,15 @@ form .btn button[type="submit"] {
   padding-right: 20px;
   border: 1px solid rgb(233, 233, 233);
   padding-top: 20px;
-  margin-top: 30px;
+  margin-top: 18px;
   overflow: hidden;
   position: relative;
 }
-.book a.btn {
-  position: absolute;
+.book .status {
+  position: a;
   bottom: 10px;
   width: 70%;
-  margin-left: 10px;
+  position: absolute;
 }
 
 .book img {
@@ -520,6 +519,13 @@ form .btn button[type="submit"] {
 .book h3 {
   padding-top: 10px;
   font-size: 18px;
+}
+.book .stars {
+  font-size: 15px;
+}
+.fa-star,
+.fa-star-half-o {
+  color: #c9ab24;
 }
 .avail {
   height: 10px;
@@ -538,7 +544,7 @@ form .btn button[type="submit"] {
   margin-top: 5px;
 }
 .book a {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .book-status h6 {
   font-weight: 400;
@@ -602,6 +608,66 @@ form .btn button[type="submit"] {
 .view-back-btn {
   padding-top: 40px;
   padding-bottom: 30px;
+}
+.review-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.review-box {
+  width: 300px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 28px;
+}
+.review-box img {
+  width: 20%;
+  border-radius: 100%;
+  padding-top: 30px;
+}
+.review-box p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+.review-hr {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.review-foot {
+  justify-content: space-between;
+}
+.review-foot p {
+  font-size: 10px;
+}
+.b-category {
+  font-size: 12px;
+}
+.review-title {
+  padding: 70px 0px 20px 0px;
+}
+.star-rating {
+  font-size: 30px;
+  cursor: pointer;
+}
+.rating-form {
+  padding: 10px 30px 10px 30px;
+}
+.rating-star {
+  color: gray;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.yr-review-txt {
+  font-size: 20px;
+  padding-top: 20px;
+  margin-bottom: -10px;
+}
+.rating-star:hover {
+  color: #c9ab24;
+}
+.review-input {
+  padding-top: 20px;
 }
 @media screen and (max-width: 600px) {
   .carousel-img {
@@ -681,6 +747,12 @@ form .btn button[type="submit"] {
   }
   .book a.btn {
     margin-left: 0px;
+  }
+  .review-box {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 770px) {
