@@ -492,7 +492,7 @@ form .btn button[type="submit"] {
 .book-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-flow: wrap;
 }
 .book {

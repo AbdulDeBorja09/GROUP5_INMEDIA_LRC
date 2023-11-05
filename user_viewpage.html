@@ -9,6 +9,15 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/8a364c3095.js"
       crossorigin="anonymous"
@@ -173,101 +182,181 @@
         </div>
       </div>
     </div>
+    <div class="container">
+      <div id="myCarousel" class="owl-carousel owl-theme my-3">
+        <div class="card shadow my-3">
+          <img
+            src="https://images.pexels.com/photos/68525/soap-colorful-color-fruit-68525.jpeg"
+            class="card-img-top"
+            height="300"
+            alt="Image 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card 1</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <div class="card shadow my-3">
+          <img
+            src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            class="card-img-top"
+            alt="Image 2"
+            height="300"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
 
+        <div class="card shadow my-3">
+          <img
+            src="https://images.pexels.com/photos/8754695/pexels-photo-8754695.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+            class="card-img-top"
+            alt="Image 2"
+            height="300"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card 2</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("#myCarousel").owlCarousel({
+          items: 3, // Number of cards shown in each slide
+          loop: true, // Continuously loop the carousel
+          margin: 20, // Space between cards
+          nav: true, // Show navigation buttons
+          navText: [
+            "<i class='fas fa-chevron-left'></i>",
+            "<i class='fas fa-chevron-right'></i>",
+          ], // Custom navigation icons
+          responsive: {
+            0: {
+              items: 1, // Number of cards shown in the carousel for smaller screens
+            },
+            768: {
+              items: 2, // Number of cards shown in the carousel for medium screens
+            },
+            992: {
+              items: 3, // Number of cards shown in the carousel for large screens
+            },
+          },
+        });
+      });
+    </script>
     <div class="container">
       <h1 class="explroe-txt text-center">Explore More</h1>
       <div class="book-list container">
-        <div class="book">
+        <div class="book" data-category="SCS">
           <img src="Books/book1.png" width="200px" />
           <div class="b-details">
-            <h3>Science Ficton And Fantasy</h3>
+            <h3>Java Programming (8th Edition)</h3>
+            <h6 class="b-category"><i>SCS</i></h6>
+          </div>
+          <div class="status">
             <div class="book-status d-flex">
               <div class="avail"></div>
               <h6>Available</h6>
             </div>
-            <div class="status">
-              <details>
-                <h6><b>Author:</b> De Borja, Abdul Aziz A.</h6>
-                <h6><b>Category:</b> SAS</h6>
-                <br />
-                <br />
-              </details>
+            <div class="stars" style="color: rgb(241, 241, 5)">
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star-half-o"></i>
             </div>
+            <a
+              href="user_viewpage.html"
+              class="btn form-control btn-outline-primary"
+              >View</a
+            >
           </div>
-          <a
-            href="user_viewpage.html"
-            class="btn form-control btn-outline-primary"
-            >View</a
-          >
         </div>
-        <div class="book">
+        <div class="book" data-category="SAS">
           <img src="Books/book1.png" width="200px" />
           <div class="b-details">
-            <h3>Science Ficton And Fantasy</h3>
+            <h3>Graphic Design x100</h3>
+            <h6 class="b-category"><i>SAS</i></h6>
+          </div>
+          <div class="status">
             <div class="book-status d-flex">
               <div class="avail"></div>
               <h6>Available</h6>
             </div>
-            <div class="status">
-              <details>
-                <h6><b>Author:</b> De Borja, Abdul Aziz A.</h6>
-                <h6><b>Category:</b> SAS</h6>
-                <br />
-                <br />
-              </details>
+            <div class="stars" style="color: rgb(241, 241, 5)">
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star-half-o"></i>
             </div>
+            <a
+              href="user_viewpage.html"
+              class="btn form-control btn-outline-primary"
+              >View</a
+            >
           </div>
-          <a
-            href="user_viewpage.html"
-            class="btn form-control btn-outline-primary"
-            >View</a
-          >
         </div>
-        <div class="book">
+        <div class="book" data-category="SABM">
           <img src="Books/book1.png" width="200px" />
           <div class="b-details">
-            <h3>Science Ficton And Fantasy</h3>
+            <h3>Managerial Accounting (Global Edition)</h3>
+            <h6 class="b-category"><i>SABM</i></h6>
+          </div>
+          <div class="status">
             <div class="book-status d-flex">
               <div class="avail"></div>
               <h6>Available</h6>
             </div>
-            <div class="status">
-              <details>
-                <h6><b>Author:</b> De Borja, Abdul Aziz A.</h6>
-                <h6><b>Category:</b> SAS</h6>
-                <br />
-                <br />
-              </details>
+            <div class="stars" style="color: rgb(241, 241, 5)">
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star-half-o"></i>
             </div>
+            <a
+              href="user_viewpage.html"
+              class="btn form-control btn-outline-primary"
+              >View</a
+            >
           </div>
-          <a
-            href="user_viewpage.html"
-            class="btn form-control btn-outline-primary"
-            >View</a
-          >
         </div>
-        <div class="book">
+        <div class="book" data-category="SCS">
           <img src="Books/book1.png" width="200px" />
           <div class="b-details">
-            <h3>Science Ficton And Fantasy</h3>
+            <h3>iCloud (2nd Edition)</h3>
+            <h6 class="b-category"><i>SCS</i></h6>
+          </div>
+          <div class="status">
             <div class="book-status d-flex">
               <div class="avail"></div>
               <h6>Available</h6>
             </div>
-            <div class="status">
-              <details>
-                <h6><b>Author:</b> De Borja, Abdul Aziz A.</h6>
-                <h6><b>Category:</b> SAS</h6>
-                <br />
-                <br />
-              </details>
+            <div class="stars" style="color: rgb(241, 241, 5)">
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star checked"></i>
+              <i class="fa fa-star-half-o"></i>
             </div>
+            <a
+              href="user_viewpage.html"
+              class="btn form-control btn-outline-primary"
+              >View</a
+            >
           </div>
-          <a
-            href="user_viewpage.html"
-            class="btn form-control btn-outline-primary"
-            >View</a
-          >
         </div>
       </div>
     </div>
@@ -329,6 +418,8 @@
       </div>
     </footer>
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
