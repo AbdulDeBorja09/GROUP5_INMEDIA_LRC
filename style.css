@@ -429,7 +429,7 @@ form .btn button[type="submit"] {
   font-size: 15px;
   padding-bottom: 10px;
 }
-.about-img h6 {
+.about-img .team-mem {
   position: relative;
   font-size: 20px;
   text-align: center;
@@ -438,6 +438,13 @@ form .btn button[type="submit"] {
 }
 .abt-desc {
   background-color: rgb(247, 246, 246);
+}
+.about-img .celino {
+  position: relative;
+  font-size: 19px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 12px;
 }
 .img-img {
   background-color: rgb(247, 246, 246);
@@ -642,6 +649,9 @@ form .btn button[type="submit"] {
   }
   .about-img h6 {
     font-size: 13px;
+  }
+  .about-desc .celino {
+    font-size: 10px;
   }
   .sort {
     width: 50%;
