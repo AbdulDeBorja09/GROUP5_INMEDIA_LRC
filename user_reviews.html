@@ -199,45 +199,6 @@
           <button class="btn btn-outline-primary w-50">Send Review</button>
         </div>
       </div>
-      <script>
-        function initializeStarRating() {
-          const stars = document.querySelectorAll(".rating-star");
-          const ratingValue = document.getElementById("rating-value");
-          let rating;
-
-          stars.forEach((star) => {
-            star.addEventListener("click", () => {
-              rating = star.getAttribute("data-value");
-              ratingValue.textContent = `${rating}`;
-              highlightSelectedStars(rating);
-            });
-
-            star.addEventListener("mouseover", () => {
-              resetStarsColor();
-              highlightSelectedStars(star.getAttribute("data-value"));
-            });
-
-            star.addEventListener("mouseout", () => {
-              resetStarsColor();
-              highlightSelectedStars(rating);
-            });
-          });
-
-          function resetStarsColor() {
-            stars.forEach((star) => {
-              star.style.color = "gray";
-            });
-          }
-
-          function highlightSelectedStars(value) {
-            for (let i = 0; i < value; i++) {
-              stars[i].style.color = "#c9ab24";
-            }
-          }
-        }
-
-        window.addEventListener("load", initializeStarRating);
-      </script>
     </div>
 
     <div class="review-title text-center">

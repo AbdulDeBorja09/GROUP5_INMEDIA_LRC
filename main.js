@@ -44,23 +44,6 @@ function validateForm() {
 }
 
 // LOGIN ANIMATION
-const loginText = document.querySelector(".title-text .login");
-const loginForm = document.querySelector("form.login");
-const loginBtn = document.querySelector("label.login");
-const signupBtn = document.querySelector("label.signup");
-const signupLink = document.querySelector("form .signup-link a");
-signupBtn.onclick = () => {
-  loginForm.style.marginLeft = "-50%";
-  loginText.style.marginLeft = "-50%";
-};
-loginBtn.onclick = () => {
-  loginForm.style.marginLeft = "0%";
-  loginText.style.marginLeft = "0%";
-};
-signupLink.onclick = () => {
-  signupBtn.click();
-  return false;
-};
 
 // BOOK SEARCH FUNCTION
 function search() {
@@ -91,3 +74,80 @@ function sortBooks() {
     }
   });
 }
+
+// script.js
+function initializeStarRating() {
+  const stars = document.querySelectorAll(".rating-star");
+  const ratingValue = document.getElementById("rating-value");
+  let rating;
+
+  stars.forEach((star) => {
+    star.addEventListener("click", () => {
+      rating = star.getAttribute("data-value");
+      ratingValue.textContent = `You rated ${rating} stars.`;
+      highlightSelectedStars(rating);
+    });
+
+    star.addEventListener("mouseover", () => {
+      resetStarsColor();
+      highlightSelectedStars(star.getAttribute("data-value"));
+    });
+
+    star.addEventListener("mouseout", () => {
+      resetStarsColor();
+      highlightSelectedStars(rating);
+    });
+  });
+
+  function resetStarsColor() {
+    stars.forEach((star) => {
+      star.style.color = "gray";
+    });
+  }
+
+  function highlightSelectedStars(value) {
+    for (let i = 0; i < value; i++) {
+      stars[i].style.color = "gold";
+    }
+  }
+}
+
+// Call the function to initialize star rating functionality when the window has loaded
+window.addEventListener("load", initializeStarRating);
+
+//DATE PICKER
+document.addEventListener("DOMContentLoaded", function () {
+  const pickupDateInput = document.getElementById("pickup-date");
+  const returnDateInput = document.getElementById("return-date");
+  const today = new Date().toISOString().split("T")[0];
+
+  pickupDateInput.setAttribute("min", today);
+  pickupDateInput.addEventListener("input", function () {
+    const pickupDate = pickupDateInput.value;
+    const minReturnDate = new Date(pickupDate);
+    minReturnDate.setDate(minReturnDate.getDate() + 1);
+    maxReturnDate.setDate(maxReturnDate.getDate() + 7);
+
+    returnDateInput.setAttribute(
+      "min",
+      minReturnDate.toISOString().split("T")[0]
+    );
+    returnDateInput.setAttribute(
+      "max",
+      maxReturnDate.toISOString().split("T")[0]
+    );
+
+    if (returnDateInput.value < minReturnDate.toISOString().split("T")[0]) {
+      returnDateInput.value = minReturnDate.toISOString().split("T")[0];
+    }
+
+    if (returnDateInput.value > maxReturnDate.toISOString().split("T")[0]) {
+      returnDateInput.value = maxReturnDate.toISOString().split("T")[0];
+    }
+  });
+});
+
+var title = localStorage.getItem("title");
+var Author = localStorage.getItem("Author");
+document.getElementById("displayHeading").textContent = title;
+document.getElementById("Author").textContent = Author;

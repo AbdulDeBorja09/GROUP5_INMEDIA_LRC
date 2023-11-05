@@ -126,147 +126,19 @@
       <div class="navbar-box-y container-{breakpoint}"></div>
     </div>
     <div class="container">
-      <div class="reserve-form">
-        <h1 class="rf-txt text-center">RESERVATION FORM</h1>
-        <form action="user_confirm.html" method="post">
-          <div class="row">
-            <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="fname">First Name</label>
-              <input
-                type="text"
-                name="fname"
-                id="fname"
-                class="form-control"
-                required
-                autocomplete=""
-              />
-            </div>
-            <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="lname:">Last Name</label>
-              <input
-                type="text"
-                name="lname"
-                id="lname"
-                class="form-control"
-                required
-                autocomplete=""
-              />
-            </div>
-            <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="contact">Contact No.:</label>
-              <input
-                type="text"
-                name="contact"
-                id="contact"
-                class="form-control"
-                required
-                autocomplete=""
-              />
-            </div>
-            <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="email:">School Email:</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="form-control"
-                required
-                autocomplete=""
-              />
-            </div>
-            <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="dept:">Department: </label>
-              <input
-                type="text"
-                name="dept"
-                id="dept"
-                class="form-control"
-                required
-                autocomplete=""
-              />
-            </div>
-            <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="sec:">Program & Section:</label>
-              <input
-                type="text"
-                name="sec"
-                id="sec"
-                class="form-control"
-                required
-                autocomplete=""
-              />
-            </div>
-            <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="pickup-date:">Pick Up Date:</label>
-              <input
-                type="date"
-                id="pickup-date"
-                required
-                class="form-control"
-                autocomplete=""
-              />
-            </div>
-            <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="return-date:">Return Date: </label>
-              <input
-                type="date"
-                id="return-date"
-                required
-                class="form-control"
-                autocomplete=""
-              />
-            </div>
-            <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="time" class="pick-time-txt">Pickup Time: </label>
-              <br />
-              <input
-                type="radio"
-                name="time"
-                id="time"
-                class="time-radio"
-                required
-              />
-              07:00am - 12:00pm
-              <br />
-              <input
-                type="radio"
-                name="time"
-                id="time"
-                class="time-radio"
-                required
-              />
-              01:00pm - 5:00pm
-            </div>
-          </div>
-        </form>
+      <div class="confirm-div text-center">
+        <img src="Resources/check.png" class="confirm-img" />
+        <h1>Reservation Complete</h1>
+        <h6>Thank you!</h6>
+      </div>
+      <div class="confirm-button d-flex">
+        <a href="user_reviews.html" class="btn btn-outline-secondary"
+          >Send Review</a
+        >
+        <a href="index.html" class="btn btn-outline-success">Go Home</a>
       </div>
     </div>
 
-    <div class="book-reserve-details container bg-light">
-      <h2 class="text-center">BOOK DETAILS</h2>
-      <br />
-      <h4>Title:</h4>
-      <div class="b-title">
-        <p id="BookTitle"></p>
-        <p>1x</p>
-      </div>
-      <h4>Author:</h4>
-      <p id="Author"></p>
-
-      <hr />
-      <div class="reserve-btn">
-        <button href="" class="prcd-btn btn btn-outline-success" type="submit">
-          PROCEED
-        </button>
-      </div>
-    </div>
-
-    <script>
-      var title = localStorage.getItem("title");
-      var Author = localStorage.getItem("Author");
-      document.getElementById("BookTitle").textContent = title;
-      document.getElementById("Author").textContent = Author;
-    </script>
     <footer class="footer bg-dark pt-5 pb-4">
       <div class="container">
         <div class="row text-white">

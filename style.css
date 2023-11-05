@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 .nu-logo {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -98,7 +101,7 @@
   height: 100%;
 }
 .card-div {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .card-text {
   padding: 10px;
@@ -245,9 +248,7 @@
   background: #35408e;
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-input[type="radio"] {
-  display: none;
-}
+
 #signup:checked ~ .slider-tab {
   left: 50%;
 }
@@ -561,6 +562,7 @@ form .btn button[type="submit"] {
 .book a {
   margin-top: 10px;
   margin-left: 10px;
+  width: 100;
 }
 
 .book-status h6 {
@@ -671,6 +673,7 @@ form .btn button[type="submit"] {
   color: gray;
   font-size: 20px;
   padding-bottom: 20px;
+  padding-top: 30px;
 }
 .yr-review-txt {
   font-size: 20px;
@@ -683,7 +686,73 @@ form .btn button[type="submit"] {
 .review-input {
   padding-top: 20px;
 }
+.rbook {
+  text-align: center;
+  padding-top: 70px;
+}
+.a-bline {
+  height: 3px;
+  background-color: #35408e;
+  width: 150px;
+  margin: auto;
+}
+.reserve-form {
+  padding: 50px 10px 10px 20px;
+}
+.rf-txt {
+  padding-bottom: 40px;
+}
+.rsrv-from-inp {
+  padding-top: 10px;
+}
+.time-radio {
+  padding-top: 50px;
+}
+.pick-time-txt {
+  padding-bottom: 10px;
+}
+.book-reserve-details {
+  padding: 30px;
+  margin-top: 50px;
+}
+.reserve-btn {
+  justify-content: end;
+  display: flex;
+}
+.b-title {
+  display: flex;
+  justify-content: space-between;
+}
+.prcd-btn {
+  width: 30%;
+}
+.confirm-img {
+  width: 20%;
+}
+.confirm-div {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.confirm-button {
+  justify-content: space-around;
+}
+.confirm-button a {
+  width: 40%;
+}
+.trash-icon {
+  padding-top: 15px;
+  font-size: 23px;
+}
+
 @media screen and (max-width: 600px) {
+  .wrapper {
+    overflow: hidden;
+    max-width: 450px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
   .carousel-img {
     filter: blur(1px);
   }
@@ -765,19 +834,16 @@ form .btn button[type="submit"] {
     padding: 10px;
     margin-top: 20px;
   }
+  .prcd-btn {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .confirm-img {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 770px) {
   .m-hide {
     display: none;
-  }
-}
-@media screen and (max-width: 600px) {
-  .wrapper {
-    overflow: hidden;
-    max-width: 450px;
-    background: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
 }
