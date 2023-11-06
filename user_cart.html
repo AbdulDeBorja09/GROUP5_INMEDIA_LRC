@@ -65,8 +65,8 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a href="user_testimonials.html" class="nav-link text-white"
-                    >Testimonials</a
+                  <a href="user_reviews.html" class="nav-link text-white"
+                    >Review</a
                   >
                 </li>
               </ul>
@@ -126,7 +126,205 @@
       </div>
       <div class="navbar-box-y container-{breakpoint}"></div>
     </div>
-    <h1 class="sample-page text-center">USER CART PAGE</h1>
+    <h1 class="resrv-title">RESERVATIONS</h1>
+    <div class="reservation-div container">
+      <div class="row">
+        <div class="resrv-page col-lg-6 col-md-12 col-sm-12">
+          <h3>To Pick up</h3>
+          <table class="rsrv-table table table-bordered">
+            <tr>
+              <th class="m-hide text-center">#</th>
+              <th class="table-btitle-head">Book</th>
+              <th class="text-center">Detials</th>
+            </tr>
+            <tr>
+              <td class="text-center m-hide">1</td>
+              <td>Java Programming (8th Edition)</td>
+              <td class="text-center fs-6">
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#pick"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center m-hide">2</td>
+              <td class="table-empty"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text-center m-hide">3</td>
+              <td class="table-empty"></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="resrv-page col-lg-6 col-md-12 col-sm-12">
+          <h3>To Return</h3>
+
+          <table class="rsrv-table table table-bordered">
+            <tr class="text-center">
+              <th class="m-hide">#</th>
+              <th class="table-btitle-head">Book</th>
+              <th>Detials</th>
+            </tr>
+            <tr>
+              <td class="text-center m-hide">1</td>
+              <td>Computer Networking (6th Edition)</td>
+              <td class="text-center fs-6">
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  data-bs-toggle="modal"
+                  data-bs-target="#return"
+                >
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center m-hide">2</td>
+              <td class="table-empty"></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="text-center m-hide">3</td>
+              <td class="table-empty"></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="pick"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Book Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img class="pickup-img" src="Books/6.png" width="20%" />
+            </div>
+            <h4>Book Title:</h4>
+            <p class="r-modal-book">Java Programming (8th Edition)</p>
+            <h4>Author:</h4>
+            <p class="r-modal-book">Joyce Farrell</p>
+            <h6>Category:</h6>
+            <p class="r-modal-book"><i>SCS</i></p>
+            <div class="d-flex justify-content-between">
+              <div class="rmodal-date">
+                <h6>Pick Up date</h6>
+                <p>11/15/23</p>
+              </div>
+              <div class="rmodal-date">
+                <h6>Return date</h6>
+                <p>11/21/23</p>
+              </div>
+            </div>
+            <h6>Time</h6>
+            <p>01:00pm - 5:00pm</p>
+            <i class="text-danger"
+              >*Note: Failure to pick up the book at the scheduled date and time
+              will result in the book being marked as available again.</i
+            >
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="return"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Book Details
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img class="pickup-img" src="Books/3.png" width="20%" />
+            </div>
+            <h4>Book Title:</h4>
+            <p class="r-modal-book">Computer Networking (6th Edition)</p>
+            <h4>Author:</h4>
+            <p class="r-modal-book">James F. Kurose, Keith W. Ross</p>
+            <h6>Category:</h6>
+            <p class="r-modal-book"><i>SEA</i></p>
+            <div class="d-flex justify-content-between">
+              <div class="rmodal-date">
+                <h6>Pick Up date</h6>
+                <p>11/15/23</p>
+              </div>
+              <div class="rmodal-date">
+                <h6>Return date</h6>
+                <p>11/21/23</p>
+              </div>
+            </div>
+            <i class="text-danger"
+              >*Note: Failure to return the book on the due date will result in
+              a deduction of demerit points within 24 hours. Lost books must be
+              paid for.</i
+            >
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rcnt-div container text-center">
+      <a href="index.html" class="btn btn-outline-primary w-50">Go Home</a>
+    </div>
     <footer class="footer bg-dark pt-5 pb-4">
       <div class="container">
         <div class="row text-white">
@@ -137,37 +335,37 @@
           <div class="footer-div col-lg-2 col-sm-6 col-md-6 text-center">
             <h4>DEPARTMENT</h4>
             <div class="f-links">
-              <a href="">SCS</a>
-              <a href="">SABM</a>
-              <a href="">SAS</a>
-              <a href="">SEA</a>
+              <a href="user_books.html">SCS</a>
+              <a href="user_books.html">SABM</a>
+              <a href="user_books.html">SAS</a>
+              <a href="user_books.html">SEA</a>
             </div>
           </div>
           <div class="footer-div col-lg-2 col-sm-6 col-md-6 text-center">
             <h4>SCHOOL YEAR</h4>
             <div class="f-links">
-              <a href="">2022-2023</a>
-              <a href="">2021-2022</a>
-              <a href="">2020-2021</a>
-              <a href="">2019-2020</a>
+              <a href="#">2022-2023</a>
+              <a href="#">2021-2022</a>
+              <a href="#">2020-2021</a>
+              <a href="#">2019-2020</a>
             </div>
           </div>
           <div class="footer-div col-lg-2 col-sm-6 col-md-6 text-center">
             <h4>BOOKS</h4>
             <div class="f-links">
-              <a href="">MAGAZINE</a>
-              <a href="">FICTION</a>
-              <a href="">DICTIONARY</a>
-              <a href="">EDUCATIONAL</a>
+              <a href="user_books.html">MAGAZINE</a>
+              <a href="user_books.html">FICTION</a>
+              <a href="user_books.html">DICTIONARY</a>
+              <a href="user_books.html">EDUCATIONAL</a>
             </div>
           </div>
           <div class="footer-div col-lg-2 col-sm-6 col-md-6 text-center">
             <h4>SITE LINK</h4>
             <div class="f-links">
-              <a href="">HOME</a>
-              <a href="">BOOKS</a>
-              <a href="">WISHLIST</a>
-              <a href="">TESTIMONIALS</a>
+              <a href="index.html">HOME</a>
+              <a href="user_books.html">BOOKS</a>
+              <a href="user_wishlist.html">WISHLIST</a>
+              <a href="user_reviews.html">REVIEW</a>
             </div>
           </div>
         </div>

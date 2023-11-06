@@ -733,7 +733,8 @@ form .btn button[type="submit"] {
   padding: 50px 10px 10px 20px;
 }
 .rf-txt {
-  padding-bottom: 40px;
+  margin-top: -60px;
+  padding-bottom: 50px;
 }
 .rsrv-from-inp {
   padding-top: 10px;
@@ -800,6 +801,46 @@ form .btn button[type="submit"] {
 }
 .review-carousles {
   padding-top: 30px;
+}
+.resrv-title {
+  text-align: center;
+  padding-top: 50px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.reservation-div {
+  background-color: rgb(248, 248, 248);
+  border: 1px solid rgb(223, 223, 223);
+}
+.resrv-page {
+  padding: 30px;
+}
+.rsrv-table {
+  width: 100%;
+}
+.resrv-page h3 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.table-btitle-head {
+  text-align: center;
+}
+.table-empty {
+  height: 50px;
+}
+.r-modal-book {
+  border-bottom: 1px solid rgb(112, 112, 112);
+}
+.pickup-img {
+  border-radius: 100%;
+  padding-bottom: 30px;
+}
+.rmodal-date {
+  padding-top: 15px;
+  text-align: center;
+}
+.rcnt-div {
+  padding-top: 50px;
 }
 @media screen and (max-width: 600px) {
   .wrapper {
@@ -928,6 +969,9 @@ form .btn button[type="submit"] {
     width: 150px;
     margin: auto;
     margin-bottom: 60px;
+  }
+  .table-btitle-head {
+    text-align: start;
   }
 }
 @media screen and (max-width: 770px) {

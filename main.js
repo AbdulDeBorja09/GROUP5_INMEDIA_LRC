@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-// FIXED LOGIN FUNCTION
+//LOGIN FUNCTION
 function validateForm() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
@@ -43,8 +43,6 @@ function validateForm() {
   }
 }
 
-// LOGIN ANIMATION
-
 // BOOK SEARCH FUNCTION
 function search() {
   const searchInput = document.getElementById("search-item");
@@ -75,7 +73,7 @@ function sortBooks() {
   });
 }
 
-// script.js
+// STAR RATING
 function initializeStarRating() {
   const stars = document.querySelectorAll(".rating-star");
   const ratingValue = document.getElementById("rating-value");
@@ -118,13 +116,14 @@ document.addEventListener("DOMContentLoaded", function () {
   const pickupDateInput = document.getElementById("pickup-date");
   const returnDateInput = document.getElementById("return-date");
   const today = new Date().toISOString().split("T")[0];
+  const maxReturnDate = new Date(); // Initialize maxReturnDate variable
 
   pickupDateInput.setAttribute("min", today);
   pickupDateInput.addEventListener("input", function () {
     const pickupDate = pickupDateInput.value;
     const minReturnDate = new Date(pickupDate);
     minReturnDate.setDate(minReturnDate.getDate() + 1);
-    maxReturnDate.setDate(maxReturnDate.getDate() + 7);
+    maxReturnDate.setDate(minReturnDate.getDate() + 7); // Set max return date to 7 days after pickup
 
     returnDateInput.setAttribute(
       "min",
