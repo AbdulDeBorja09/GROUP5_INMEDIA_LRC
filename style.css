@@ -845,6 +845,11 @@ form .btn button[type="submit"] {
 .rcnt-div {
   padding-top: 50px;
 }
+.disabled-btn {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100;
+}
 @media screen and (max-width: 600px) {
   .wrapper {
     overflow: hidden;
@@ -975,6 +980,11 @@ form .btn button[type="submit"] {
   }
   .table-btitle-head {
     text-align: start;
+  }
+  .disabled-btn {
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 100;
   }
 }
 @media screen and (max-width: 770px) {
