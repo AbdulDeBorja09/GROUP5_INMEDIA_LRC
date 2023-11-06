@@ -723,6 +723,9 @@ form .btn button[type="submit"] {
   float: right;
   margin-bottom: 20px;
 }
+.mission p {
+  padding-top: 20px;
+}
 .vission-line {
   height: 3px;
   background-color: #fcd41c;
