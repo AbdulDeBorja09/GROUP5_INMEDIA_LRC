@@ -111,8 +111,6 @@ function initializeStarRating() {
     }
   }
 }
-
-// Call the function to initialize star rating functionality when the window has loaded
 window.addEventListener("load", initializeStarRating);
 
 //DATE PICKER
@@ -146,8 +144,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
-var title = localStorage.getItem("title");
-var Author = localStorage.getItem("Author");
-document.getElementById("displayHeading").textContent = title;
-document.getElementById("Author").textContent = Author;

@@ -160,8 +160,8 @@
         </div>
 
         <div class="viewpage-info col-lg-6 col-md-12">
-          <h1>Metric handbook Planning and Design Data</h1>
-          <h5>Pamela Buxton</h5>
+          <h1 id="booktitle">Metric handbook Planning and Design Data</h1>
+          <h5 id="Author">Pamela Buxton</h5>
           <h6>August 03, 2016</h6>
           <h6><i>SEA</i></h6>
           <div class="star text-warning">
@@ -350,9 +350,13 @@
         <hr />
       </div>
     </footer>
+    <script>
+      var title = document.getElementById("booktitle").textContent;
+      var Author = document.getElementById("Author").textContent;
+      localStorage.setItem("title", title);
+      localStorage.setItem("Author", Author);
+    </script>
     <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

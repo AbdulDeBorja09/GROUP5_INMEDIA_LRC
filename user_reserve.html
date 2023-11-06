@@ -125,10 +125,10 @@
       </div>
       <div class="navbar-box-y container-{breakpoint}"></div>
     </div>
-    <div class="container">
-      <div class="reserve-form">
-        <h1 class="rf-txt text-center">RESERVATION FORM</h1>
-        <form action="user_confirm.html" method="post">
+    <form action="user_confirm.html">
+      <div class="container">
+        <div class="reserve-form">
+          <h1 class="rf-txt text-center">RESERVATION FORM</h1>
           <div class="row">
             <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
               <label for="fname">First Name</label>
@@ -142,7 +142,7 @@
               />
             </div>
             <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="lname:">Last Name</label>
+              <label for="lname">Last Name</label>
               <input
                 type="text"
                 name="lname"
@@ -164,7 +164,7 @@
               />
             </div>
             <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="email:">School Email:</label>
+              <label for="email">School Email:</label>
               <input
                 type="email"
                 name="email"
@@ -175,7 +175,7 @@
               />
             </div>
             <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="dept:">Department: </label>
+              <label for="dept">Department: </label>
               <input
                 type="text"
                 name="dept"
@@ -186,7 +186,7 @@
               />
             </div>
             <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="sec:">Program & Section:</label>
+              <label for="sec">Program & Section:</label>
               <input
                 type="text"
                 name="sec"
@@ -197,32 +197,30 @@
               />
             </div>
             <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="pickup-date:">Pick Up Date:</label>
+              <label for="pickup-date">Pick Up Date:</label>
               <input
                 type="date"
                 id="pickup-date"
                 required
                 class="form-control"
-                autocomplete=""
               />
             </div>
             <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="return-date:">Return Date: </label>
+              <label for="return-date">Return Date: </label>
               <input
                 type="date"
                 id="return-date"
                 required
                 class="form-control"
-                autocomplete=""
               />
             </div>
             <div class="rsrv-from-inp col-lg-6 col-md-6 col-sm-12">
-              <label for="time" class="pick-time-txt">Pickup Time: </label>
+              <label for="am" class="pick-time-txt">Pickup Time: </label>
               <br />
               <input
                 type="radio"
                 name="time"
-                id="time"
+                id="am"
                 class="time-radio"
                 required
               />
@@ -231,42 +229,42 @@
               <input
                 type="radio"
                 name="time"
-                id="time"
+                id="pm"
                 class="time-radio"
                 required
               />
               01:00pm - 5:00pm
             </div>
           </div>
-        </form>
+        </div>
       </div>
-    </div>
 
-    <div class="book-reserve-details container bg-light">
-      <h2 class="text-center">BOOK DETAILS</h2>
-      <br />
-      <h4>Title:</h4>
-      <div class="b-title">
-        <p id="BookTitle"></p>
-        <p>1x</p>
+      <div class="book-reserve-details container bg-light">
+        <h2 class="text-center">BOOK DETAILS</h2>
+        <br />
+        <h4>Title:</h4>
+        <div class="b-title">
+          <p id="BookTitle"></p>
+          <p>1x</p>
+        </div>
+        <h4>Author:</h4>
+        <p id="Author"></p>
+
+        <hr />
+        <div class="reserve-btn">
+          <button class="prcd-btn btn btn-outline-success w-50" type="submit">
+            PROCEED
+          </button>
+        </div>
       </div>
-      <h4>Author:</h4>
-      <p id="Author"></p>
-
-      <hr />
-      <div class="reserve-btn">
-        <button href="" class="prcd-btn btn btn-outline-success" type="submit">
-          PROCEED
-        </button>
-      </div>
-    </div>
-
+    </form>
     <script>
       var title = localStorage.getItem("title");
       var Author = localStorage.getItem("Author");
       document.getElementById("BookTitle").textContent = title;
       document.getElementById("Author").textContent = Author;
     </script>
+
     <footer class="footer bg-dark pt-5 pb-4">
       <div class="container">
         <div class="row text-white">

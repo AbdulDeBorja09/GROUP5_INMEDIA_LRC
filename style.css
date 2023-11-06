@@ -724,7 +724,7 @@ form .btn button[type="submit"] {
   justify-content: space-between;
 }
 .prcd-btn {
-  width: 30%;
+  width: 100%;
 }
 .confirm-img {
   width: 20%;
@@ -743,7 +743,14 @@ form .btn button[type="submit"] {
   padding-top: 15px;
   font-size: 23px;
 }
-
+.wish-title {
+  text-align: center;
+  padding-top: 50px;
+}
+.bot-nav {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
 @media screen and (max-width: 600px) {
   .wrapper {
     overflow: hidden;
