@@ -30,7 +30,7 @@ html {
   color: white;
 }
 .carousel-caption {
-  color: black;
+  color: #000;
 }
 .carousel-caption h5 {
   font-size: 80px;
@@ -57,7 +57,7 @@ html {
   z-index: 1;
 } */
 .c-active {
-  filter: blur(1px);
+  filter: blur(2px);
 }
 .rbutton {
   background-color: #fcd41c;
@@ -380,6 +380,18 @@ form .btn button[type="submit"] {
   justify-content: center;
   padding-bottom: 50px;
 }
+.contact-div {
+  padding-top: 30px;
+}
+.contact-p1 h3 {
+  font-weight: 700;
+}
+.contact-p1 p {
+  font-size: 16px;
+}
+.contact-p2 {
+  font-weight: 700;
+}
 .student-data-title {
   font-weight: 400;
   padding-top: 50px;
@@ -465,7 +477,7 @@ form .btn button[type="submit"] {
 }
 .abtus-title {
   padding-top: 70px;
-  padding-bottom: 30px;
+  font-weight: 700;
 }
 .mission h3 {
   text-align: end;
@@ -661,6 +673,7 @@ form .btn button[type="submit"] {
 }
 .review-title {
   padding: 70px 0px 20px 0px;
+  font-weight: 700;
 }
 .star-rating {
   font-size: 30px;
@@ -695,6 +708,26 @@ form .btn button[type="submit"] {
   background-color: #35408e;
   width: 150px;
   margin: auto;
+}
+.abt-bline {
+  height: 4px;
+  background-color: #35408e;
+  width: 250px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+.misson-line {
+  height: 3px;
+  background-color: #35408e;
+  width: 150px;
+  float: right;
+  margin-bottom: 20px;
+}
+.vission-line {
+  height: 3px;
+  background-color: #fcd41c;
+  width: 140px;
+  margin-bottom: 20px;
 }
 .reserve-form {
   padding: 50px 10px 10px 20px;
@@ -888,6 +921,13 @@ form .btn button[type="submit"] {
     padding-top: 0px;
     margin-top: 050px;
     padding-bottom: 30px;
+  }
+  .abt-bline {
+    height: 3px;
+    background-color: #35408e;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 60px;
   }
 }
 @media screen and (max-width: 770px) {
