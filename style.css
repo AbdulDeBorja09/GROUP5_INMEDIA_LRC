@@ -812,7 +812,8 @@ form .btn button[type="submit"] {
   padding-bottom: 50px;
 }
 .reservation-div {
-  background-color: rgb(248, 248, 248);
+  background-color: rgb(241, 241, 241);
+  border-radius: 3px;
   border: 1px solid rgb(223, 223, 223);
 }
 .resrv-page {
