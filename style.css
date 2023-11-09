@@ -247,7 +247,11 @@ html {
   background: #35408e;
   transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
+.table-sdnt-msg th {
+  text-align: center;
+  background-color: #35408e;
+  color: white;
+}
 #signup:checked ~ .slider-tab {
   left: 50%;
 }
@@ -533,7 +537,24 @@ form .btn button[type="submit"] {
   overflow: hidden;
   position: relative;
 }
+.mbook {
+  width: 200px;
+  height: 360px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid rgb(233, 233, 233);
+  padding-top: 20px;
+  margin-top: 18px;
+  overflow: hidden;
+  position: relative;
+}
 .book .status {
+  position: a;
+  bottom: 10px;
+  width: 70%;
+  position: absolute;
+}
+.mbook .status {
   position: a;
   bottom: 10px;
   width: 70%;
@@ -544,6 +565,13 @@ form .btn button[type="submit"] {
   width: 100%;
 }
 .book h3 {
+  padding-top: 10px;
+  font-size: 18px;
+}
+.mbook img {
+  width: 100%;
+}
+.mbook h3 {
   padding-top: 10px;
   font-size: 18px;
 }
@@ -571,6 +599,11 @@ form .btn button[type="submit"] {
   margin-top: 5px;
 }
 .book a {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100;
+}
+.mbook a {
   margin-top: 10px;
   margin-left: 10px;
   width: 100;
@@ -851,6 +884,165 @@ form .btn button[type="submit"] {
   margin-left: 10px;
   width: 100;
 }
+.lib-home-div{
+  padding: 60px 0px 100px 0px;
+
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+}
+.lib-home-box1{
+  width: 280px;
+  margin: 10px;
+}
+.lib-home-div h1{
+  text-align: center;
+  padding-top: 30px;
+}.lib-home-viewbtn {
+  margin-top: -16px;
+  height: 56px;
+}
+.lib-home-viewbtn p{
+  margin-top: -1px;
+  padding-top: 15px;
+  text-align: center;
+  font-weight: 700;
+  text-decoration: none;
+}
+.lib-home-viewbtn a{
+  text-decoration: none;
+  color:#35408e;
+}
+.table{
+  width: 100%;
+}
+.lib-duty-table-btn{
+  padding: 30px 0px 50px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+.lib-duty-title{
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.b1, .b2, .b3, .b4, .b5, .b5, .b6{
+  background-color: #ececec;
+  color: black;
+  border: 1px solid rgb(219, 219, 219);
+}
+.lib-home-box{
+  height: 100px;
+  background-color: #35408e;
+  
+}
+.lib-home-top{
+  margin-top: -33px;
+  background-color: #fcd41c;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50px;
+  width: 400px;
+
+}
+.lib-home-top h1{
+  margin-bottom: -3px;
+}
+.msg-img{
+  width: 100px;
+  border-radius: 50px;
+}
+.subjct-txt{
+  font-weight: 700;
+}
+.subjct-name{
+  font-weight: 700;
+}
+.msg-infos{
+  display: flex;
+  flex-direction: column;
+}
+.table td{
+  vertical-align: middle;
+}
+.mark-read{
+  color: #35408e;
+}
+.lib-msg-title{
+  font-weight: 700;
+  padding: 50px 0px 0px 0px;
+  text-align: center;
+
+}
+.table-sdnt-msg{
+  border: 1px solid rgb(196, 190, 190);
+  
+}
+.table-sdnt-msg td, .table-sdnt-msg  tr{
+  
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.mark-read-read{
+  color: gray;
+}
+.msg-footer-mdl{
+  display: flex;
+  justify-content: space-around;
+}
+.msg-send-btn{
+  width: 70px;
+  color: white;
+}
+.msg-send-btn svg{
+ 
+  color: white;
+}
+.lib-rsrv-title{
+  padding-top:50px;
+  text-align: center;
+  font-weight: 700;
+}
+.lib-today-div{
+  background-color: #ececec;
+  padding: 40px;
+  vertical-align: middle;  
+}
+.lib-rsrv-img{
+  width: 100px;
+
+}
+.lib-today-row{
+  background-color: whitesmoke;
+  padding: 30px
+}
+.lib-today-box h5, .lib-today-box  h6, .lib-today-box  button{
+  margin-top: 35px;
+ 
+}
+.rsrv-tdy-txt{
+  padding: 40px 0px 10px 0px;
+}
+.msng-btn{
+  padding-bottom: 15px;
+}
+.demerit-cirlce-div{
+  display: flex;
+  justify-content: space-around;
+}
+.demerit-cricle{
+  border: 3px solid green;
+  border-radius: 100%;
+  vertical-align: middle;
+  margin-bottom: -10px;
+}
+.demerit-number{
+  padding: 30px 30px 25px 30px;
+  color: green;
+  
+  
+}
 @media screen and (max-width: 600px) {
   .wrapper {
     overflow: hidden;
@@ -987,6 +1179,44 @@ form .btn button[type="submit"] {
     margin-left: 0px;
     width: 100;
   }
+  .lib-home-box1{
+    width: 130px;
+  }
+  .lib-home-top{
+    width: 200px;
+    margin-top: -29px;
+  }
+  .lib-home-top h1{
+    font-size: 30px;
+    
+  }
+  .lib-today-box h6, .lib-today-box h5{
+    text-align: center;
+  }
+  .lib-today-box h5{
+    text-align: center;
+    padding-top: 20px;
+  }
+  .lib-today-box button{
+    width: 50%;
+    
+    
+  }
+  .lib-today-box h5, .lib-today-box h6, .lib-today-box button{
+    margin-top: 0px;
+  }
+  .lib-rsrv-img-div{
+    display: flex;
+    justify-content: space-around;
+  }
+  .rsrv-tdy-txt{
+    text-align: center;
+  }
+  .book-list{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
 }
 @media screen and (max-width: 770px) {
   .m-hide {
@@ -1011,4 +1241,29 @@ form .btn button[type="submit"] {
   .viewp-review-info {
     text-align: center;
   }
+  .lib-today-box h6, .lib-today-box h5{
+    text-align: center;
+  }
+  .lib-today-box h5{
+    text-align: center;
+    padding-top: 20px;
+  }
+  .lib-today-box button{
+    width: 50%;
+    
+    
+  }
+  .lib-today-box h5, h6, button{
+    margin-top: 0px;
+  }
+  .lib-rsrv-img-div{
+    display: flex;
+    justify-content: space-around;
+  }
+  .rsrv-tdy-txt{
+    text-align: center;
+  }
 }
+
+
+
