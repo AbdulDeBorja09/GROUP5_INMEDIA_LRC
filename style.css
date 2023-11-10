@@ -1044,14 +1044,11 @@ form .btn button[type="submit"] {
 }
 .offcanvas-header h3 {
   padding-top: 10px;
-  color: white;
 }
 .admin-sidebar {
-  background-color: #242424;
+  background-color: white;
 }
-.admin-sidebar a {
-  color: white;
-}
+
 .admin-nav-lgout {
   position: absolute;
   width: 70%;
@@ -1063,11 +1060,10 @@ form .btn button[type="submit"] {
   height: 3px;
   background-color: rgb(29, 29, 29);
 }
-.admin-body {
-  background-color: #292929;
-}
+
 .admin-div-dark {
-  background-color: #302f2f;
+  background-color: rgb(206, 206, 206);
+  border: 1px solid rgb(138, 138, 138);
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 20px;
@@ -1078,13 +1074,13 @@ form .btn button[type="submit"] {
   padding-top: 10px;
   text-align: center;
   font-weight: 700;
-  color: white;
 }
 .admin-hme-tile-div {
   border-radius: 20px;
   margin-top: 30px;
   padding: 20px;
-  background-color: #131212;
+  background-color: rgb(206, 206, 206);
+  border: 1px solid rgb(138, 138, 138);
 }
 .admin-home-wrap-div {
   display: flex;
@@ -1093,7 +1089,7 @@ form .btn button[type="submit"] {
 }
 .admin-box {
   height: 200px;
-  background-color: #131212;
+  background-color: rgb(139, 139, 139);
   color: white;
   width: 300px;
   text-align: center;
@@ -1119,12 +1115,9 @@ form .btn button[type="submit"] {
   font-size: 30px;
 }
 .admin-input {
-  background-color: #242424;
-  color: white;
+  border: 1px solid rgb(138, 138, 138);
 }
-.upload-div {
-  color: white;
-}
+
 .admin-edit-img {
   text-align: center;
   background-color: #888;
@@ -1136,9 +1129,7 @@ form .btn button[type="submit"] {
 .upload-div label {
   padding-top: 20px;
 }
-.edit-div {
-  color: white;
-}
+
 .edit-div label {
   padding-top: 20px;
 }
@@ -1153,18 +1144,12 @@ form .btn button[type="submit"] {
 }
 
 .admin-books-list .book {
-  background-color: rgb(56, 56, 56);
-  color: white;
-  border: #000;
+  border: 1px solid #b4b4b4;
   height: 400px;
 }
-.admin-sort {
-  background-color: #302f2f;
-  color: white;
-}
+.admin-sort,
 .admin-search {
-  background-color: #302f2f;
-  color: white;
+  border: 1px solid rgb(138, 138, 138);
 }
 .admin-deltebook-btn {
   margin-top: 20px;
@@ -1186,15 +1171,15 @@ form .btn button[type="submit"] {
   text-align: center;
 }
 .admin-student-table td {
-  background: #3f3f3f;
-  color: white;
+  background: #d1cfcf;
 }
 .admin-student-table th {
-  background:#242424;
-  color: white;
+  background: #e6e5e5;
+  border: 1px solid rgb(138, 138, 138);
 }
 .admin-student-table {
   border-radius: 3px;
+  border: 1px solid rgb(138, 138, 138);
 }
 @media screen and (max-width: 600px) {
   .wrapper {
