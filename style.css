@@ -1019,12 +1019,14 @@ form .btn button[type="submit"] {
   background-color: #ececec;
   padding: 40px;
   vertical-align: middle;
+  border: 1px solid rgb(201, 201, 201);
 }
 .lib-rsrv-img {
   width: 100px;
 }
 .lib-today-row {
   background-color: whitesmoke;
+  border: 1px solid rgb(201, 201, 201);
   padding: 30px;
 }
 .lib-today-box h5,
@@ -1053,7 +1055,7 @@ form .btn button[type="submit"] {
   color: green;
 }
 .admin-nav {
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(100, 100, 100);
 }
 .admin-nav-top button {
   display: flex;
@@ -1121,7 +1123,7 @@ form .btn button[type="submit"] {
 }
 .admin-inner-box {
   height: 180px;
-  background-color: #242424;
+  background-color: rgb(68, 68, 68);
   border-radius: 10px;
 }
 .admin-inner-box h1 {
