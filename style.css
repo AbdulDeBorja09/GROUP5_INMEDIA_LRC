@@ -145,6 +145,9 @@ html {
 .profile-table1 td {
   padding: 5px;
 }
+.signup {
+  color: white;
+}
 .logout {
   padding: 30px;
 }
@@ -252,16 +255,20 @@ html {
   cursor: default;
   user-select: none;
 }
-#signup:checked ~ label.login {
-  color: #000;
+.login-form-label {
+  padding-top: 20px;
+  margin-bottom: -20px;
+  margin-left: 5px;
 }
-#login:checked ~ label.signup {
-  color: #000;
+.login-imgdiv img {
+  width: 60px;
 }
-#login:checked ~ label.login {
-  cursor: default;
-  user-select: none;
+.login-imgdiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -20px;
 }
+
 .wrapper .form-container {
   width: 100%;
   overflow: hidden;
@@ -1043,6 +1050,7 @@ form .btn button[type="submit"] {
 .demerit-cirlce-div {
   display: flex;
   justify-content: space-around;
+  margin-top: 40px;
 }
 .demerit-cricle {
   border: 3px solid green;
@@ -1248,7 +1256,7 @@ form .btn button[type="submit"] {
     overflow: hidden;
     max-width: 450px;
     background: #fff;
-    padding: 30px;
+    padding: 45px;
     border-radius: 15px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
