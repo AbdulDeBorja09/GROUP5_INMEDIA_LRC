@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>LRC | Admin</title>
+  </head>
+  <body class="admin-body">
+    <div id="nav-on-top" class=" ">
+      <div>
+        <nav class="admin-nav navbar">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+              id="button"
+              style="border: 0"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="sidebar admin-sidebar offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h3>Admin</h3>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="text-center d-flex flex-column"></div>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="Admin_home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Admin_upload.html"
+                      >Upload Books</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="Admin_managebooks.html"
+                      >Manage Book</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Admin_student.html"
+                      >Students Info</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Admin_librarian.html"
+                      >Librarian Info</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Admin_transactions.html"
+                      >Transactions</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link"> Reservations </a>
+                  </li>
+                </ul>
+                <a
+                  href="login.html"
+                  class="admin-nav-lgout btn btn-outline-danger"
+                  >Log Out</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="r-line"></div>
+      </div>
+    </div>
+    <div class="admin-hme-tile-div container shadow-lg">
+      <h1 class="admin-home-txt">LIBRARIANS INFO</h1>
+    </div>
+    <br /><br />
+    <div class="container admin-div-dark shadow-lg">
+      <table
+        id="data-table"
+        class="admin-student-table table table-hover table-responsive-sm"
+        style="width: 100%"
+      >
+        <thead>
+          <tr class="text-center">
+            <th>Name</th>
+            <th class="table-hide m-hide">Email</th>
+            <th class="text-center m-hide">Role</th>
+            <th class="text-center">Remove</th>
+            <th>View Profile</th>
+          </tr>
+        </thead>
+        <tbody class="student-list">
+          <tr class="student">
+            <td class="student-search">De Borja, Abdul Aziz A.</td>
+            <td class="student-search text-center m-hide">
+              deborjaa@Librarian.students.nu-laguna.edu.ph
+            </td>
+            <td class="text-center m-hide">Student</td>
+            <td class="text-center">
+              <button class="btn btn-outline-danger">REMOVE</button>
+            </td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Celino, Andrea Charisse A.</td>
+            <td class="student-search text-center">2022-120162</td>
+            <td class="table-hide">Information Technology</td>
+            <td class="table-hide">BSIT-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Rausa, Zyrha Alliah</td>
+            <td class="student-search text-center">2022-120112</td>
+            <td class="table-hide">Information Technology</td>
+            <td class="table-hide">BSIT-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Young, Ethan G.</td>
+            <td class="student-search text-center">2022-120113</td>
+            <td class="table-hide">Information Technology</td>
+            <td class="table-hide">BSIT-211A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Togado, Apple Jane U.</td>
+            <td class="student-search text-center">2023-120114</td>
+            <td class="table-hide">Information Systems</td>
+            <td class="table-hide">BSIS-231A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Brofar, Euwayne Paulette B.</td>
+            <td class="student-search text-center">2022-120115</td>
+            <td class="table-hide">Tourism Management</td>
+            <td class="table-hide">BSTM-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Marce, Malcolm A.</td>
+            <td class="student-search text-center">2022-120116</td>
+            <td class="table-hide">Computer Science</td>
+            <td class="table-hide">BSCS-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Lopez, Trisha B.</td>
+            <td class="student-search text-center">2022-120117</td>
+            <td class="table-hide">Information Technology</td>
+            <td class="table-hide">BSIT-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Balidoy, Myle A.</td>
+            <td class="student-search text-center">2023-120118</td>
+            <td class="table-hide">Computer Sciece</td>
+            <td class="table-hide">BSCS-231A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Basbas, Dave S.</td>
+            <td class="student-search text-center">2022-120119</td>
+            <td class="table-hide">Civil Engineering</td>
+            <td class="table-hide">BSCE-221C</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Abonalla, Ronan T.</td>
+            <td class="student-search text-center">2022-120120</td>
+            <td class="table-hide">Information Technology</td>
+            <td class="table-hide">BSIT-221B</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Sularta, Francis D.</td>
+            <td class="student-search text-center">2023-120121</td>
+            <td class="table-hide">Tourism Management</td>
+            <td class="table-hide">BSTM-231E</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Aquino, Farah R.</td>
+            <td class="student-search text-center">2021-120122</td>
+            <td class="table-hide">Accountancy</td>
+            <td class="table-hide">BSA-211F</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Dela Cruz, Juan G.</td>
+            <td class="student-search text-center">2022-120123</td>
+            <td class="table-hide">Computer Engineering</td>
+            <td class="table-hide">BSCpE-221B</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Conde, Lalaine C.</td>
+            <td class="student-search text-center">2023-120124</td>
+            <td class="table-hide">Information Technology</td>
+            <td class="table-hide">BSIT-231C</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Fremista, Lara J.</td>
+            <td class="student-search text-center">2023-120125</td>
+            <td class="table-hide">Information Systems</td>
+            <td class="table-hide">BSIS-231C</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Garcia, Russell</td>
+            <td class="student-search text-center">2021-120126</td>
+            <td class="table-hide">Tourism Management</td>
+            <td class="table-hide">BSTM-211B</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Obmerga, Yasmin G.</td>
+            <td class="student-search text-center">2022-120127</td>
+            <td class="table-hide">Accountancy</td>
+            <td class="table-hide">BSA-221C</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Landicho, Eric Joshua</td>
+            <td class="student-search text-center">2022-120128</td>
+            <td class="table-hide">Information Systems</td>
+            <td class="table-hide">BSIS-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Bautista, Kayson A.</td>
+            <td class="student-search text-center">2023-120129</td>
+            <td class="table-hide">Civil Engineering</td>
+            <td class="table-hide">BSCE-231F</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Tan, Fernanda</td>
+            <td class="student-search text-center">2021-120130</td>
+            <td class="table-hide">Multimedia Arts</td>
+            <td class="table-hide">MMA-211B</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Santos, Alex D.</td>
+            <td class="student-search text-center">2023-120131</td>
+            <td class="table-hide">Tourism Management</td>
+            <td class="table-hide">BSTM-231B</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Perry, Tate Kate C.</td>
+            <td class="student-search text-center">2022-120132</td>
+            <td class="table-hide">Information Technology</td>
+            <td class="table-hide">BSIT-221C</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Congzon, Ajello C.</td>
+            <td class="student-search text-center">2023-120133</td>
+            <td class="table-hide">Computer Science</td>
+            <td class="table-hide">BSCS-231A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Burgos, Jemuel T.</td>
+            <td class="student-search text-center">2022-120134</td>
+            <td class="table-hide">Information Systems</td>
+            <td class="table-hide">BSIS-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Delos Reyes, Ace A.</td>
+            <td class="student-search text-center">2022-120135</td>
+            <td class="table-hide">Accountancy</td>
+            <td class="table-hide">BSA-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Revilleza, Carl Jerald B.</td>
+            <td class="student-search text-center">2021-120136</td>
+            <td class="table-hide">Multimedia Arts</td>
+            <td class="table-hide">MMA-211A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Corona, John John A.</td>
+            <td class="student-search text-center">2022-120137</td>
+            <td class="table-hide">Information Technology</td>
+            <td class="table-hide">BSIT-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Aquino, Althea Reece</td>
+            <td class="student-search text-center">2023-120138</td>
+            <td class="table-hide">Business Administration</td>
+            <td class="table-hide">BSBA-231B</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Reyes, Trevor A.</td>
+            <td class="student-search text-center">2020-120139</td>
+            <td class="table-hide">Computer Engineering</td>
+            <td class="table-hide">BSCpE-201A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Moreno, Clara David C.</td>
+            <td class="student-search text-center">2022-120140</td>
+            <td class="table-hide">Tourism Management</td>
+            <td class="table-hide">BSTM-221F</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Palacol, Francine Denise N.</td>
+            <td class="student-search text-center">2022-120141</td>
+            <td class="table-hide">Accountancy</td>
+            <td class="table-hide">BSA-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Seron, Ashley Jasmine S.</td>
+            <td class="student-search text-center">2022-120142</td>
+            <td class="table-hide">Civil Engineering</td>
+            <td class="table-hide">BSCE-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Tribbiani, Joey A.</td>
+            <td class="student-search text-center">2022-120143</td>
+            <td class="table-hide">Civil Engineering</td>
+            <td class="table-hide">BSCE-221D</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Bing, Chandler Muriel</td>
+            <td class="student-search text-center">2022-120144</td>
+            <td class="table-hide">Information Technology</td>
+            <td class="table-hide">BSIT-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Geller, Ross B.</td>
+            <td class="student-search text-center">2022-120145</td>
+            <td class="table-hide">Accountancy</td>
+            <td class="table-hide">BSA-221A</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td class="student-search">Grey, Meredith Candice B.</td>
+            <td class="student-search text-center">2023-120146</td>
+            <td class="table-hide">Architecture</td>
+            <td class="table-hide">BSArch-231C</td>
+            <td class="text-center">
+              <a href="Librarian_student_profile.html" class="btn btn-primary"
+                >View</a
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="padding: 60px"></div>
+    <footer>
+      <div class="lib-footer">
+        <h1 class="text-white text-center fs-4">LIBRARY RESERVE CENTER</h1>
+        <div class="lib-footer-div d-flex text-center">
+          <a href="" class="lib-footer-links">Home | </a>
+          <a href="" class="lib-footer-links">&nbsp; Privacy Policy |</a>
+          <a href="" class="lib-footer-links">&nbsp; Terms </a>
+        </div>
+        <div class="lib-footer-btm">
+          <p class="lib-footer-txt text-center">
+            Copyright ©NU-Laguna 2023. Library Reserve Center. All Rights
+            Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
