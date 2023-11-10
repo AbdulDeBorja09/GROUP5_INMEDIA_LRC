@@ -53,17 +53,17 @@
                     <a class="nav-link" href="Admin_home.html">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="Admin_upload.html"
+                    <a class="nav-link" href="Admin_upload.html"
                       >Upload Books</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Admin_managebooks.html"
+                    <a class="nav-link" href="Admin_missing.html"
                       >Manage Book</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="Admin_missing.html"
+                    <a class="nav-link active" href="Admin_managebooks.html"
                       >Missing Book</a
                     >
                   </li>
@@ -96,75 +96,76 @@
       </div>
     </div>
     <div class="admin-hme-tile-div container shadow-lg">
-      <h1 class="admin-home-txt">UPLOAD BOOKS</h1>
+      <h1 class="admin-home-txt">MISSING BOOKS</h1>
     </div>
     <br /><br />
     <div class="container admin-div-dark shadow-lg">
-      <div class="upload-div">
-        <form action="">
-          <label for="title">Book Title:</label>
-          <input
-            type="text"
-            name="title"
-            id="title"
-            class="form-control admin-input"
-            required
-          />
-          <label for="author">Author: </label>
-          <input
-            type="text"
-            name=""
-            id=""
-            class="form-control admin-input"
-            required
-          />
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm12">
-              <label for="text">Release Date</label>
-              <input type="text" class="form-control admin-input" required />
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm12">
-              <label for="catgry">Category</label>
-              <select
-                name="catgry"
-                id="catgry"
-                class="form-control admin-input"
-              >
-                <option value="" selected disabled>
-                  -- Select --<s/option>
-                </option>
-                <option value="SEA">SCS</option>
-                <option value="SEA">SEA</option>
-                <option value="SAS">SAS</option>
-                <option value="SABM">SABM</option>
-              </select>
-            </div>
-          </div>
-          <label for="desc">Description:</label>
-          <textarea
-            class="form-control admin-input"
-            name="desc"
-            id="desc"
-            cols="30"
-            rows="6"
-          ></textarea>
-          <label for="img">Choose image</label>
-          <input
-            type="file"
-            class="form-control admin-input"
-            name=""
-            id=""
-            required
-          />
-          <br />
-          <button class="btn btn-outline-success w-100">ADD BOOK</button>
-        </form>
-      </div>
+      <table
+        id="data-table"
+        class="admin-student-table table table-hover table-responsive-sm"
+        style="width: 100%"
+      >
+        <thead>
+          <tr class="text-center">
+            <th>Name</th>
+            <th class="table-hide">Category</th>
+            <th class="table-hide">Student Name</th>
+            <th>DATE</th>
+            <th>Return</th>
+          </tr>
+        </thead>
+
+        <tbody class="student-list">
+          <tr class="student">
+            <td class="student-search">Java Programming (8th Edition)</td>
+            <td class="student-search text-center table-hide">SCS</td>
+            <td class="text-center table-hide">De Borja, Abdul Aziz A.</td>
+            <td class="text-center">11/13/23</td>
+            <td class="text-center">
+              <button class="btn btn-outline-success">DONE</button>
+            </td>
+          </tr>
+          <tr class="student">
+            <td class="student-search">Graphic Design x100</td>
+            <td class="student-search text-center table-hide">SAS</td>
+            <td class="text-center table-hide">Togado, Apple Jane U..</td>
+            <td class="text-center">09/12/23</td>
+            <td class="text-center">
+              <button class="btn btn-outline-success">DONE</button>
+            </td>
+          </tr>
+          <tr class="student">
+            <td class="student-search">Computer Networking (6th Edition)</td>
+            <td class="student-search text-center table-hide">SEA</td>
+            <td class="text-center table-hide">Abonalla, Ronan T.</td>
+            <td class="text-center">10/02/23</td>
+            <td class="text-center">
+              <button class="btn btn-outline-success">DONE</button>
+            </td>
+          </tr>
+          <tr class="student">
+            <td class="student-search">The New Rules of Marketing & PR</td>
+            <td class="student-search text-center table-hide">SABM</td>
+            <td class="text-center table-hide">Dela Cruz, Juan G.</td>
+            <td class="text-center">07/11/23</td>
+            <td class="text-center">
+              <button class="btn btn-outline-success">DONE</button>
+            </td>
+          </tr>
+          <tr class="student">
+            <td class="student-search">Tourism (11th Edition)</td>
+            <td class="student-search text-center table-hide">SABM</td>
+            <td class="text-center table-hide">Swift, Taylor B.</td>
+            <td class="text-center">05/04/23</td>
+            <td class="text-center">
+              <button class="btn btn-outline-success">DONE</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    <br />
-    <br /><br />
-    <br />
+    <div style="padding: 200px"></div>
     <footer>
       <div class="lib-footer">
         <h1 class="text-white text-center fs-4">LIBRARY RESERVE CENTER</h1>

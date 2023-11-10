@@ -934,10 +934,12 @@ form .btn button[type="submit"] {
 .lib-home-box {
   height: 100px;
   background-color: #35408e;
+  border-bottom: 2px solid black;
 }
 .lib-home-top {
   margin-top: -33px;
   background-color: #fcd41c;
+  border: 1.5px solid black;
   padding: 10px;
   text-align: center;
   border-radius: 50px;
@@ -1181,6 +1183,31 @@ form .btn button[type="submit"] {
   border-radius: 3px;
   border: 1px solid rgb(138, 138, 138);
 }
+.admin-add-div {
+  background-color: rgb(206, 206, 206);
+  border: 1px solid rgb(15, 126, 15);
+  margin-bottom: 10px;
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+}
+.admin-add-div:hover {
+  background-color: rgb(143, 143, 143);
+  border: 1px solid rgb(77, 76, 76);
+}
+.admin-add-div h5 {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin-bottom: -3px;
+}
+.admin-addsdtnbtn {
+  text-decoration: none;
+}
+.admin-libinfo-edit label {
+  padding-top: 20px;
+}
+
 @media screen and (max-width: 600px) {
   .wrapper {
     overflow: hidden;
@@ -1364,6 +1391,36 @@ form .btn button[type="submit"] {
   }
   .admin-books-list .book-list {
     justify-content: space-around;
+  }
+  .admin-add-div {
+    width: 80%;
+  }
+  .admin-box {
+    height: 150px;
+    background-color: rgb(139, 139, 139);
+    color: white;
+    width: 250px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .admin-box a {
+    text-decoration: none;
+    color: white;
+  }
+  .admin-inner-box {
+    height: 130px;
+    background-color: #242424;
+    border-radius: 10px;
+  }
+  .admin-inner-box h1 {
+    padding-top: 40px;
+  }
+  .admin-inner-box h5 {
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 770px) {

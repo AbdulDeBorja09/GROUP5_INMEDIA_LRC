@@ -63,6 +63,11 @@
                     >
                   </li>
                   <li class="nav-item">
+                    <a class="nav-link" href="Admin_missing.html"
+                      >Missing Book</a
+                    >
+                  </li>
+                  <li class="nav-item">
                     <a class="nav-link active" href="Librarian_students.html"
                       >Students Info</a
                     >
@@ -94,68 +99,67 @@
       <h1 class="admin-home-txt">ADD STUDENTS</h1>
     </div>
     <br /><br />
-    <div class="container admin-div-dark shadow-lg">
-      <div class="edit-div">
-        <label for="Name">Name:</label>
-        <input
-          type="text"
-          name="Name"
-          id="Name"
-          class="form-control admin-input"
-          required
-        />
-        <label for="Postion">Student No.: </label>
-        <input
-          type="text"
-          name="Postion"
-          id="Postion"
-          class="form-control admin-input"
-          required
-        />
-        <label for="Program">Program: </label>
-        <input
-          type="text"
-          name="Program"
-          id="Program"
-          class="form-control admin-input"
-          required
-        />
+    <form action="Admin_student.html">
+      <div class="container admin-div-dark shadow-lg">
+        <div class="edit-div">
+          <label for="Name">Name:</label>
+          <input
+            type="text"
+            name="Name"
+            id="Name"
+            class="form-control admin-input"
+            required
+          />
+          <label for="Postion">Student No.: </label>
+          <input
+            type="text"
+            name="Postion"
+            id="Postion"
+            class="form-control admin-input"
+            required
+          />
+          <label for="Program">Program: </label>
+          <input
+            type="text"
+            name="Program"
+            id="Program"
+            class="form-control admin-input"
+            required
+          />
 
-        <label for="author">Email: </label>
-        <input
-          type="email"
-          name=""
-          id=""
-          class="form-control admin-input"
-          required
-        />
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm12">
-            <label for="date">Password:</label>
-            <input type="text" class="form-control admin-input" required />
+          <label for="author">Email: </label>
+          <input
+            type="email"
+            name=""
+            id=""
+            class="form-control admin-input"
+            required
+          />
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm12">
+              <label for="date">Password:</label>
+              <input type="text" class="form-control admin-input" required />
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm12">
+              <label for="cpass">Confirm Password:</label>
+              <input
+                type="text"
+                name="cpass"
+                id="cpass"
+                class="form-control admin-input"
+                required
+              />
+            </div>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm12">
-            <label for="cpass">Confirm Password:</label>
-            <input
-              type="text"
-              name="cpass"
-              id="cpass"
-              class="form-control admin-input"
-              required
-            />
+          <label for="img">Student image</label>
+          <input type="file" class="form-control admin-input" name="" id="" />
+          <br />
+          <div class="admin-editbtn">
+            <button class="btn btn-outline-success">SUBMIT</button>
           </div>
-        </div>
-        <label for="img">Student image</label>
-        <input type="file" class="form-control admin-input" name="" id="" />
-        <br />
-        <div class="admin-editbtn">
-          <a href="Admin_student.html" class="btn btn-outline-success"
-            >SUBMIT</a
-          >
         </div>
       </div>
-    </div>
-
+    </form>
     <br />
     <br /><br />
     <br />
