@@ -68,6 +68,7 @@
                   <a href="user_reviews.html" class="nav-link text-white"
                     >Reviews</a
                   >
+                  <div class="homenav-r"></div>
                 </li>
               </ul>
               <div class="d-flex justify-content-center">
@@ -140,6 +141,7 @@
                 id="name"
                 class="form-control"
                 placeholder="Dimagiba, Tangol"
+                required
               />
             </div>
             <div class="review-input col-lg-6 col-md-12 col-sm-12">
@@ -150,6 +152,7 @@
                 id="snum"
                 class="form-control"
                 placeholder="2022-123456"
+                required
               />
             </div>
             <div class="review-input col-lg-6 col-md-12 col-sm-12">
@@ -160,6 +163,7 @@
                 id="dept"
                 class="form-control"
                 placeholder="SCS"
+                required
               />
             </div>
             <div class="review-input col-lg-6 col-md-12 col-sm-12">
@@ -170,10 +174,11 @@
                 id="sctn"
                 class="form-control"
                 placeholder="BSIT-221A"
+                required
               />
             </div>
             <div class="review-input col-lg-12 col-md-12 col-sm-12">
-              <label for="suggestion">Suggestion:</label>
+              <label for="suggestion">Suggestion: (Optional)</label>
               <textarea
                 name="suggestion"
                 id="suggestion"
@@ -195,10 +200,11 @@
             <span class="rating-star fa fa-star checked" data-value="4"></span>
             <span class="rating-star fa fa-star checked" data-value="5"></span>
           </div>
+
+          <div class="text-center" style="padding-bottom: 20px">
+            <button class="btn btn-outline-primary w-50">Send Review</button>
+          </div>
         </form>
-        <div class="text-center" style="padding-bottom: 20px">
-          <button class="btn btn-outline-primary w-50">Send Review</button>
-        </div>
       </div>
     </div>
 

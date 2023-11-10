@@ -461,6 +461,18 @@ form .btn button[type="submit"] {
 .abt-desc {
   background-color: rgb(247, 246, 246);
 }
+.about-img:hover {
+  transform: scale(1.1);
+}
+.about-img:hover {
+  transform: scale(1.1);
+}
+.about-img {
+  transition: 0.2s ease-in-out;
+}
+.team-mem {
+  animation: typing 2s steps(20), cursor 0.4s step-end infinite alternate;
+}
 .about-img .celino {
   position: relative;
   font-size: 19px;
@@ -671,6 +683,7 @@ form .btn button[type="submit"] {
 .review-box {
   width: 300px;
   text-align: center;
+  transition: ease 0.2s;
   padding: 10px;
   margin-top: 28px;
 }
@@ -747,6 +760,7 @@ form .btn button[type="submit"] {
   width: 150px;
   float: right;
   margin-bottom: 20px;
+  animation: slideright 0.7s ease-in;
 }
 .mission p {
   padding-top: 20px;
@@ -756,6 +770,7 @@ form .btn button[type="submit"] {
   background-color: #fcd41c;
   width: 140px;
   margin-bottom: 20px;
+  animation: slideleft 0.7s ease-in;
 }
 .reserve-form {
   padding: 50px 10px 10px 20px;
@@ -1208,7 +1223,24 @@ form .btn button[type="submit"] {
 .admin-libinfo-edit label {
   padding-top: 20px;
 }
-
+.review-box:hover {
+  transform: scale(1.2);
+}
+.home-nav a {
+  color: red;
+}
+.homenav-l {
+  height: 2px;
+  background-color: white;
+  border-radius: 100%;
+  animation: slidenavright 0.3s ease-in;
+}
+.homenav-r {
+  height: 2px;
+  background-color: white;
+  border-radius: 100%;
+  animation: slidenavleft 0.3s ease-in;
+}
 @media screen and (max-width: 600px) {
   .wrapper {
     overflow: hidden;
@@ -1423,6 +1455,10 @@ form .btn button[type="submit"] {
     font-weight: 700;
     font-size: 15px;
   }
+  .homenav-r,
+  .homenav-l {
+    display: none;
+  }
 }
 @media screen and (max-width: 770px) {
   .m-hide {
@@ -1469,5 +1505,51 @@ form .btn button[type="submit"] {
   }
   .rsrv-tdy-txt {
     text-align: center;
+  }
+}
+@keyframes slideright {
+  0% {
+    transform: skewX(53deg) translate(-500px);
+    background-color: white;
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+@keyframes slideleft {
+  0% {
+    transform: skewX(53deg) translate(500px);
+    background-color: white;
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  form {
+    width: 0;
+  }
+}
+@keyframes slidenavleft {
+  0% {
+    transform: skewX(53deg) translate(-100px);
+    background-color: white;
+  }
+  100% {
+    transform: skew(0deg);
+  }
+}
+@keyframes slidenavright {
+  0% {
+    transform: skewX(53deg) translate(100px);
+    background-color: white;
+  }
+  100% {
+    transform: skew(0deg);
   }
 }
