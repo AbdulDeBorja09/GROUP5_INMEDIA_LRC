@@ -1466,7 +1466,7 @@ form .btn button[type="submit"] {
   }
   .admin-inner-box {
     height: 130px;
-    background-color: #242424;
+    background-color: rgb(68, 68, 68);
     border-radius: 10px;
   }
   .admin-inner-box h1 {
@@ -1480,6 +1480,12 @@ form .btn button[type="submit"] {
   .homenav-r,
   .homenav-l {
     display: none;
+  }
+  .missing-list .student-search {
+    font-size: 10px;
+  }
+  .missing-list .text-center {
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 770px) {
