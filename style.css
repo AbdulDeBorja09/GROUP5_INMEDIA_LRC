@@ -1251,6 +1251,18 @@ form .btn button[type="submit"] {
   border-radius: 100%;
   animation: slidenavleft 0.3s ease-in;
 }
+.sdnt-infocancel {
+  margin-bottom: 20px;
+}
+
+.studenteditbtn button {
+  width: 40%;
+}
+.studenteditbtn {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: wrap;
+}
 @media screen and (max-width: 600px) {
   .wrapper {
     overflow: hidden;
